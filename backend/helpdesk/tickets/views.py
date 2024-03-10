@@ -12,7 +12,7 @@ from rest_framework import generics
 
 
 class TicketListCreate(generics.ListCreateAPIView):
-    queryset = Ticket.objects.all()
+    queryset = Ticket.objects.all().order_by('created_at')
     serializer_class = TicketSerializer
 
     def get_permissions(self):
