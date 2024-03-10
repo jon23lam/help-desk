@@ -19,6 +19,7 @@ export const TicketManagementPage = observer(() => {
   }, [ticketsStore]);
 
   function renderTickets() {
+    
     if (tickets.length == 0) {
       return (
         <div className="TicketManagementPage">
