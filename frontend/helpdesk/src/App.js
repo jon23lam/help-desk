@@ -1,5 +1,5 @@
 import "./App.scss";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { AuthenticatedRoute } from "./routes/AuthenticatedRoute";
 import { AuthenticationProvider } from "./providers/AuthenticationProvider";
 import RootProvider from "./providers/RootProvider";
