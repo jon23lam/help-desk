@@ -7,7 +7,7 @@ const UPDATE_TICKET_ENDPOINT = (ticketId) =>
   endpoint(`api/tickets/${ticketId}/`);
 
 export async function postTicket(payload) {
-  const response = await axiosRequests.axiosPost(TICKETS_ENDPOINT, payload, {
+  const response = await axiosRequests.axiosPostNoAuth(TICKETS_ENDPOINT, payload, {
     "Content-Type": "multipart/form-data",
   });
 
