@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.5fa35e8c.css",
-    "main.js": "/static/js/main.dd4c3b85.js",
-    "static/js/453.079bb633.chunk.js": "/static/js/453.079bb633.chunk.js",
-    "static/media/home.svg": "/static/media/home.dc75a20cd911ef62b77c5ef655dbfc25.svg",
-    "index.html": "/index.html",
-    "main.5fa35e8c.css.map": "/static/css/main.5fa35e8c.css.map",
-    "main.dd4c3b85.js.map": "/static/js/main.dd4c3b85.js.map",
-    "453.079bb633.chunk.js.map": "/static/js/453.079bb633.chunk.js.map"
+    "main.css": "/help-desk/static/css/main.5fa35e8c.css",
+    "main.js": "/help-desk/static/js/main.f171aebc.js",
+    "static/js/453.079bb633.chunk.js": "/help-desk/static/js/453.079bb633.chunk.js",
+    "static/media/home.svg": "/help-desk/static/media/home.dc75a20cd911ef62b77c5ef655dbfc25.svg",
+    "index.html": "/help-desk/index.html",
+    "main.5fa35e8c.css.map": "/help-desk/static/css/main.5fa35e8c.css.map",
+    "main.f171aebc.js.map": "/help-desk/static/js/main.f171aebc.js.map",
+    "453.079bb633.chunk.js.map": "/help-desk/static/js/453.079bb633.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5fa35e8c.css",
-    "static/js/main.dd4c3b85.js"
+    "static/js/main.f171aebc.js"
   ]
 }
