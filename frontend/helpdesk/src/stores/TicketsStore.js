@@ -55,15 +55,12 @@ export class TicketsStore {
   };
 
   updateTicket = async (ticketId, payload) => {
-    this.setIsLoading(true);
 
     const response = await ticketsService.updateTicket(ticketId, payload);
 
     this.tickets = this.tickets.map((ticket) =>
       ticket.id === response.data.id ? response.data : ticket
     );
-
-    this.setIsLoading(false);
 
     return response;
   };

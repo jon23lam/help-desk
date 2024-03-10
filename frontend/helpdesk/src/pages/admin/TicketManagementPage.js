@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext } from "react";
 import { observer } from "mobx-react";
 import { RootStoreContext } from "../../providers/RootProvider";
 import { Ticket } from "./Ticket";
@@ -6,13 +6,16 @@ import { Ticket } from "./Ticket";
 import "./TicketManagementPage.scss";
 import "../../BaseStyles.scss";
 
-export const TicketManagementPage = observer((props) => {
+export const TicketManagementPage = observer(() => {
   const rootStore = useContext(RootStoreContext);
   const { ticketsStore } = rootStore;
-  const { tickets } = ticketsStore;
+  const { tickets, isLoading } = ticketsStore;
 
   useEffect(() => {
-    ticketsStore.initializeTicketManagement();
+    const initialize = async () => {
+      await ticketsStore.initializeTicketManagement();
+    };
+    initialize();
   }, [ticketsStore]);
 
   function renderTickets() {
@@ -32,7 +35,9 @@ export const TicketManagementPage = observer((props) => {
     <div className="PageContainer">
       <div className="Main">
         <h1 className="HeaderText">Admin Ticket Pannel</h1>
-        <div className="TicketManagementPage">{renderTickets()}</div>
+        <div className="TicketManagementPage">
+          {renderTickets()}
+        </div>
       </div>
     </div>
   );
