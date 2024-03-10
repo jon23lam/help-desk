@@ -1,0 +1,41 @@
+:root {
+  --green-primary: #17531c;
+  --green-secondary: #e0ecd7;
+  --green-secondary-transparent: #aee5c0;
+  --light-background: #f2f4e9;
+  --red_primary: #c30900;
+}
+
+.Ticket {
+  padding: 20px;
+  background-color: var(--light-background);
+  border-radius: 10px;
+
+  .Ticket__details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  select,
+  button {
+    margin-left: 5px;
+  }
+
+  h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.Ticket--new {
+  border: 2px solid cornflowerblue;
+}
+
+.Ticket--in-progress {
+  border: 2px solid rgb(255, 0, 195);
+}
+
+.Ticket--resolved {
+  border: 2px solid rgb(0, 187, 87);
+}
