@@ -124,7 +124,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'defaultdb',
         'USER': 'doadmin',
-        'PASSWORD': 'AVNS_EjSg1irehUn6QItfHAb',
+        'PASSWORD': os.getenv('DB_PASSWORD'),
         'HOST': 'help-desk-database-do-user-16029158-0.c.db.ondigitalocean.com',
         'PORT': '25060',
     }
