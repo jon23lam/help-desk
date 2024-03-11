@@ -19,7 +19,7 @@ export const TicketManagementPage = observer(() => {
   }, [ticketsStore]);
 
   function renderTickets() {
-    
+
     if (tickets.length == 0) {
       return (
         <div className="TicketManagementPage">
@@ -35,7 +35,7 @@ export const TicketManagementPage = observer(() => {
   return (
     <div className="PageContainer">
       <div className="Main">
-        <h1 className="HeaderText">Admin Ticket Pannel</h1>
+        <h1 className="HeaderText">Admin Ticket Panel</h1>
         <div className="TicketManagementPage">
           {renderTickets()}
         </div>
